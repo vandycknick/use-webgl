@@ -1,0 +1,44 @@
+{
+  "name": "@nvd/use-webgl",
+  "version": "0.1.0",
+  "description": "React hook utility to create a webgl context",
+  "license": "MIT",
+  "author": {
+    "name": "Nick Van Dyck",
+    "url": "https://nvd.codes"
+  },
+  "repository": "nickvdyck/use-webgl",
+  "main": "dist",
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "clean": "del-cli dist",
+    "lint": "tslint --project tsconfig.json --config tslint.json",
+    "prepublish": "npm run build",
+    "test": "npm run lint && npm run test-coverage",
+    "test-coverage": "jest --coverage",
+    "test-watch": "jest --watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@nvd/tsconfig": "^1.0.0",
+    "@types/react": "^16.8.4",
+    "del-cli": "^1.1.0",
+    "jest": "^24.1.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-testing-library": "^5.9.0",
+    "ts-jest": "^24.0.0",
+    "ts-lint": "^4.5.1",
+    "tslint": "^5.12.1",
+    "tslint-microsoft-contrib": "^6.0.0",
+    "typescript": "^3.3.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
