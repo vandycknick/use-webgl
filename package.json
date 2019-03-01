@@ -1,6 +1,6 @@
 {
   "name": "@nvd/use-webgl",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "React hook utility to create a webgl context",
   "license": "MIT",
   "author": {
@@ -15,7 +15,7 @@
     "lint": "tslint --project tsconfig.json --config tslint.json",
     "prepublish": "npm run build",
     "test": "npm run lint && npm run test-coverage",
-    "test-coverage": "jest --coverage",
+    "test-coverage": "jest --coverage --passWithNoTests",
     "test-watch": "jest --watch"
   },
   "files": [
