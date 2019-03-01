@@ -5,8 +5,8 @@ type UseWebGLOptions = {
     height: number,
 
     onInit: (GL: WebGLRenderingContext | null, canvas: HTMLCanvasElement) => void
-    onExit: () => void
-    onResize: (width: number, height: number) => void
+    onExit?: () => void
+    onResize?: (width: number, height: number) => void
 }
 
 const useWebGL = (options: UseWebGLOptions) => {
