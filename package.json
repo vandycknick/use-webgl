@@ -1,6 +1,6 @@
 {
   "name": "@nvd/use-webgl",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React hook utility to create a webgl context",
   "license": "MIT",
   "author": {
